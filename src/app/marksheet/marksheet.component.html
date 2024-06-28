@@ -1,0 +1,63 @@
+<!-- marks-form.component.html -->
+<div class="max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <h2 class="text-2xl font-bold mb-4">Enter Marks</h2>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="assignment1">
+        Assignment 1
+      </label>
+      <input
+        id="assignment1" type="text" placeholder="Enter marks"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="assignment2">
+        Assignment 2
+      </label>
+      <input
+        id="assignment2" type="text" placeholder="Enter marks"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+    </div>
+    <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="assignment2">
+          Assignment 3
+        </label>
+        <input
+          id="assignment3" type="text" placeholder="Enter marks"
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+      </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="midMarks">
+        Midterm Marks
+      </label>
+      <input
+        id="midMarks" type="text" placeholder="Enter marks"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="finalMarks">
+        Final Exam Marks
+      </label>
+      <input
+        id="finalMarks" type="text" placeholder="Enter marks"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="projectMarks">
+        Project Marks
+      </label>
+      <input
+        id="projectMarks" type="text" placeholder="Enter marks"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+    </div>
+    <div class="flex items-center justify-between">
+      <button
+        id="submitButton"
+        class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        (click)="submitForm()">
+        Submit
+      </button>
+    </div>
+
+    <div id="progress"class="p-4 m-2 rounded-md hidden" >   </div>
+  </div>
+  

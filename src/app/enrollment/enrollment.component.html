@@ -1,0 +1,72 @@
+<!-- marks-form.component.html -->
+<div class="max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+  <h2 class="text-2xl font-bold mb-4">Enrollment System</h2>
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="enrollnet">
+      Enrollment No
+    </label>
+    <input
+      id="enrollnet"
+      type="text"
+      placeholder="Enter enrollnemtno"
+      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    />
+  </div>
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="programm">
+      program
+    </label>
+    <select id="program">
+      <option value="summer">Summer</option>
+      <option value="winter">Winter</option>
+    </select>
+  </div>
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+      name
+    </label>
+    <input
+      id="name"
+      type="text"
+      placeholder="Enter name"
+      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    />
+  </div>
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="semester">
+     semester
+    </label>
+    <select id="semester">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+      </select>
+  </div>
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="noofcourse">
+      No Of Course
+    </label>
+    <input
+      id="noofcourse"
+      type="number"
+      placeholder="Enter no"
+      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    />
+  </div>
+  <div class="flex items-center justify-between">
+    <button
+      id="submitButton"
+      class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      (click)="submitForm()"
+    >
+      Submit
+    </button>
+  </div>
+
+  <div id="progress" class="p-4 m-2 rounded-md hidden"></div>
+</div>
